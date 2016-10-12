@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+<div class="results">
+<ul>
+  {% for name in name_list %}
+  <li>{{name.name}}<br>{{name.phone_number}}<br>{{name.email}}</li><br>
+  {% endfor %}
+</ul>
+
+{% endblock %}
