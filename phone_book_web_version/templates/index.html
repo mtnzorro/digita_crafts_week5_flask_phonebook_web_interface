@@ -4,11 +4,27 @@
 
 
 <div class="results">
-<ul>
-  {% for name in name_list %}
-  <li>{{name.name}}<br>{{name.phone_number}}<br>{{name.email}}<br><a class="edit" href="/update_entry?id={{name.id}}">Edit y'all</a><br></li><br>
 
-  {% endfor %}
-</ul>
+
+<table border="1" width="100%">
+<tr>
+<th>Name</th>
+<th>Phone</th>
+<th>Email</th>
+<th>Edit</th>
+</tr>
+{% for name in name_list %}
+<tr>
+<td>{{name.name}}</td>
+<td>{{name.phone_number}}</td>
+<td>{{name.email}}</td>
+<td>
+<a class="edit" href="/update_entry?id={{name.id}}">Edit y'all</a>
+</td>
+</tr>
+{% endfor %}
+</table>
+
+
 </div>
 {% endblock %}
