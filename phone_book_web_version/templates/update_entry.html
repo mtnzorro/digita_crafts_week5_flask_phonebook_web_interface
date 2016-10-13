@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block body %}
+<form action="/submit_update_entry" method="POST">
+  <input type="hidden" name="id" value="{{phonebook.id}}">
+  <p>
+    <label for="name">Name</label><br>
+    <input type="text" name="name" value="{{phonebook.name}}">
+  </p>
+  <p>
+    <label for="phone_number">Phone Number</label><br>
+    <input type="text" name="phone_number" value="{{phonebook.phone_number}}">
+  </p>
+  <p>
+    <label for="email">Email</label><br>
+    <input type="text" name="email" value="{{phonebook.email}}">
+  </p>
+  <p>
+    <button type="submit" name="action" value="1">Update Your Entry</button>
+  </p>
+  <p>
+    <button type="submit" name="action" value="2">Delete Your Entry</button>
+  </p>
+
+</form>
+{% endblock %}

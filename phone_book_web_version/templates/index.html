@@ -6,8 +6,9 @@
 <div class="results">
 <ul>
   {% for name in name_list %}
-  <li>{{name.name}}<br>{{name.phone_number}}<br>{{name.email}}</li><br>
+  <li>{{name.name}}<br>{{name.phone_number}}<br>{{name.email}}<br><a class="edit" href="/update_entry?id={{name.id}}">Edit y'all</a><br></li><br>
+
   {% endfor %}
 </ul>
-
+</div>
 {% endblock %}

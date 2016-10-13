@@ -86,3 +86,12 @@ form input{
 li{
   font-size: 20px;
 }
+
+.edit{
+  text-decoration: none;
+  background-color: darkgrey;
+  border: 1px solid darkgrey;
+  color: dodgerblue;
+  border-radius: 5px;
+  text-align: center;
+}
